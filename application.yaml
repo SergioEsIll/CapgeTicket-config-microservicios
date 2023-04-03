@@ -1,3 +1,5 @@
+server:
+  port: 8084
 # Discovery Server Access (Servidor EUREKA)
 eureka:
   client:
