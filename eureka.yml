@@ -9,7 +9,7 @@ spring:
     
 #Config Server config
   config:
-    import: optioneal:configserver:http://localhost:2222  #where the config-service is running
+    import: optional:configserver:http://localhost:2222  #where the config-service is running
 
 #Eureka client configuration
 eureka:
