@@ -6,11 +6,6 @@ server:
 spring:
   application:
     name: eureka
-    
-#Config Server config
-  config:
-    import: optional:configserver:http://localhost:2222  #where the config-service is running
-
 #Eureka client configuration
 eureka:
   client:
