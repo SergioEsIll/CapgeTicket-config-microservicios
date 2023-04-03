@@ -1,0 +1,16 @@
+# Discovery Server Access (Servidor EUREKA)
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+#Permite conocer los endpoints
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation: TRACE
