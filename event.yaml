@@ -5,9 +5,6 @@ spring:
   #Application Name
   application:
     name: event
-  #Config Server configuration data
-  config: 
-    import: optional:configserver:http://localhost:2222
   #Datasource config database access
   datasource:
     url: jdbc:mysql://10.80.148.154:3306/eventsdb
