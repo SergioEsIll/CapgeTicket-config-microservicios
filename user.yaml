@@ -1,20 +1,12 @@
-#User Server port
 server:
   port: 6666
-
-#Application Name
 spring:
   application:
     name: user
-
-#Data source
   datasource:
     url: jdbc:mysql://10.80.148.154:3306/usersdb
     username: root
     password: root
-
-#Hibernate ddl auto (create, create-drop, validate, update)
   jpa:
     hibernate:
       ddl-auto: update
-
