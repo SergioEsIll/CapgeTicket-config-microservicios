@@ -1,16 +1,12 @@
-#Events service port
 server:
   port: 7777
 spring:
-  #Application Name
   application:
     name: event
-  #Datasource config database access
   datasource:
     url: jdbc:mysql://10.80.148.154:3306/eventsdb
     username: root
     password: root
-  #Hibernate ddl auto (create, create-drop, validate, update)
   jpa:
     hibernate:
       ddl-auto: update
