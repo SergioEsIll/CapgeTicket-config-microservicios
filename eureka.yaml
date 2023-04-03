@@ -1,12 +1,8 @@
-#Eureka Server port
 server:
   port: 1111
-  
-#Application Name
 spring:
   application:
     name: eureka
-#Eureka client configuration
 eureka:
   client:
     registerWithEureka: false
@@ -14,5 +10,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:${server.port}/eureka
   server:
-    waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync
-    
+    waitTimeInMsWhenSyncEmpty: 0
