@@ -1,0 +1,13 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: payment
+  datasource:
+    #url: jdbc:mysql://10.80.148.154:3306/eventsdb
+    url: jdbc:mysql://localhost:3306/paymentsdb
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
