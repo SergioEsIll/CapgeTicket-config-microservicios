@@ -1,14 +1,15 @@
 server:
   port: 3333
 spring:
-  cloud: 
-   gateway: 
+  cloud:
+   gateway:
     routes:
       - id: user
-        uri: lb://user/
-        predicates:
-          - Path=/user/**
+        uri: lb://USER
+        predicates: Path=/api/v1/users/**
       - id: event
-        uri: lb://event/
-        predicates:
-          - Path=/event/** 
+        uri: lb://EVENT
+        predicates: Path=/api/v1/events/**
+      - id: purchase
+        uri: lb://PURCHASE
+        predicates: Path=/api/v1/payments/**
