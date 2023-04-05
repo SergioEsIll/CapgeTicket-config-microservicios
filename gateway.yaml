@@ -12,7 +12,5 @@ spring:
         predicates: Path=/api/v1/events/**
       - id: purchase
         uri: lb://PURCHASE
-        predicates: Path=/api/v1/payments/**
-      - id: purchase
-        uri: lb://PURCHASE
-        predicates: Path=/api/v1/tickets/**
+        predicates: Path=/api/v1/payments/**, /api/v1/tickets/**
+     
