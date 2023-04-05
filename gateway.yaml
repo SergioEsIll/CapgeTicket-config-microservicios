@@ -13,4 +13,6 @@ spring:
       - id: purchase
         uri: lb://PURCHASE
         predicates: Path=/api/v1/payments/**
+      - id: purchase
+        uri: lb://PURCHASE
         predicates: Path=/api/v1/tickets/**
